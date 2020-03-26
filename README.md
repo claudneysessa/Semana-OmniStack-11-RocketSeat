@@ -1,2 +1,4 @@
 # OmniStack11_RocketSeat
-Acompanhamento da 11º edição da semana OmniStack da RocketSeat
+Desenvolviemto de uma aplicação completa com NodeJS + React + React Native
+
+<h1>Back-End</h1>
