@@ -1,0 +1,56 @@
+
+*********************
+Complementos:
+*********************
+
+Visual Studio Code
+ - Dracula Theme
+ - Material Icon Theme
+
+Google Chrome
+ - json-viewer
+
+*******
+
+1. Criar a pasta do projeto
+2. npm init -y
+3. npm install express
+4. npx create-react-app frontend
+5. expo => framework pro React Native
+
+Rodar o Server NodeJS => node index.js
+Rodar o Server React => npm start
+
+Instalação do pacote para Hot Reload no NodeJS
+
+-D : DevDependencies (Somente em modo Dev)
+
+6. npm install nodemon -D
+
+Configurar o start no package.json
+
+Conector SQL
+
+7. npm install knex
+
+npm install sybase
+npm install sqlite3
+
+Iniciando Knex
+
+8. npx knex init
+
+migrations
+ - npx knex migrate:make create_ongs
+ - npx knex migrate:make create_incidents
+
+criar o banco com base nos migrations
+ - npx knex migrate:latest
+ - npx knex migrate:rollback
+ - npx knex migrate:status
+
+ 9. Instalar o CORS para controle e segurança
+
+ npm install cors
+
+ configura o index
