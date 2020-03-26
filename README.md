@@ -1,4 +1,4 @@
-# Semana OmniStack11 11.0 RocketSeat - ( Be the Hero )
+# Semana OmniStack 11.0 RocketSeat - ( Be the Hero )
 Desenvolviemto de uma aplicação completa com NodeJS + React + React Native
 
 Detalhes da Aplicação
