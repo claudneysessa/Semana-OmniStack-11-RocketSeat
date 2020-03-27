@@ -1,4 +1,7 @@
 <h1 align="center">
+    <img alt="Semana OmniStack" src=".github/logo.svg" width="200px" />
+</h1>
+<h1 align="center">
 Semana OmniStack 11.0 RocketSeat - ( Be the Hero )
 </h1>
 <p align="center">
