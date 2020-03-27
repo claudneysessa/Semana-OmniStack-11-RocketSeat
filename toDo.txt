@@ -15,13 +15,16 @@ Google Chrome
 1. Criar a pasta do projeto
 2. npm init -y
 3. npm install express
+
+--> criando o projeto WEB
+
 4. npx create-react-app frontend
 5. expo => framework pro React Native
 
 Rodar o Server NodeJS => node index.js
 Rodar o Server React => npm start
 
-Instalação do pacote para Hot Reload no NodeJS
+Instalaï¿½ï¿½o do pacote para Hot Reload no NodeJS
 
 -D : DevDependencies (Somente em modo Dev)
 
@@ -49,8 +52,36 @@ criar o banco com base nos migrations
  - npx knex migrate:rollback
  - npx knex migrate:status
 
- 9. Instalar o CORS para controle e segurança
+ 9. Instalar o CORS para controle e seguranï¿½a
 
  npm install cors
 
  configura o index
+
+ APP WEB
+
+ - Limpar o projeto
+ - arquivos inï¿½teis
+
+ O que posso apagar do projeto iniciar React??
+
+ - README.md
+ - app.css
+ - app.test.js
+ - logo.svg
+ - serviceWorker.js
+ - setupTest.js
+
+ Remover as dependencias dentro dos arquivos app.js e index.js
+
+ pasta public
+
+ robots.txt
+ manifest.json
+ logo192.png
+ logo512.png
+
+ ajustar o index.html
+
+ npm install react-icons
+ npm install react-router-dom
