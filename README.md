@@ -23,10 +23,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Express](https://expressjs.com/pt-br/)
 - [KnexJS](http://knexjs.org/)
-- [react-icons](https://react-icons.netlify.com/#/)
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
-- [cors](https://www.npmjs.com/package/cors)
-- [axios](https://www.npmjs.com/package/axios)
+- [React Icons](https://react-icons.netlify.com/#/)
+- [React Router DOM](https://www.npmjs.com/package/react-router-dom)
+- [CORS](https://www.npmjs.com/package/cors)
+- [Axios](https://www.npmjs.com/package/axios)
 
 ## Licença
 
