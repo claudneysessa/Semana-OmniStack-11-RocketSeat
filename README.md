@@ -14,8 +14,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
 
-Extras:
+Bibliotecas Utilizadas:
 
-- Main Libs
-  - [Express](https://expressjs.com/pt-br/)
-  - [KnexJS](http://knexjs.org/)
+- [Express](https://expressjs.com/pt-br/)
+- [KnexJS](http://knexjs.org/)
+- [react-icons](https://react-icons.netlify.com/#/)
+- [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
+- [cors](https://www.npmjs.com/package/cors)
+- [axios](https://github.com/axios/axios)
