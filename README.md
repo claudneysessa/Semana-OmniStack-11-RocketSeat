@@ -1,7 +1,7 @@
-<p align="center">
 <h1 align="center">
 Semana OmniStack 11.0 RocketSeat - ( Be the Hero )
 </h1>
+<p align="center">
 Desenvolviemto de uma aplicação completa com NodeJS + React + React Native
 </p>
 
@@ -9,7 +9,13 @@ Desenvolviemto de uma aplicação completa com NodeJS + React + React Native
 <img src=".github/heroes.png" width="300" ></img>
 </h2>
 
-Detalhes da Aplicação
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Back-End
-Front-End
+- [Node.js](https://nodejs.org/en/)
+- [React](https://reactjs.org)
+
+Extras:
+
+- Main Libs
+  - [Express](https://expressjs.com/pt-br/)
+  - [KnexJS](http://knexjs.org/)
