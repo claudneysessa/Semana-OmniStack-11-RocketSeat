@@ -9,12 +9,14 @@ Desenvolviemto de uma aplicação completa com NodeJS + React + React Native
 <img src=".github/heroes.png" width="300" ></img>
 </h2>
 
-## :Esse projeto foi desenvolvido com as seguintes tecnologias:
+## Tecnologia
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
 
-## :Bibliotecas Utilizadas:
+## Bibliotecas Utilizadas:
 
 - [Express](https://expressjs.com/pt-br/)
 - [KnexJS](http://knexjs.org/)
@@ -23,7 +25,7 @@ Desenvolviemto de uma aplicação completa com NodeJS + React + React Native
 - [cors](https://www.npmjs.com/package/cors)
 - [axios](https://www.npmjs.com/package/axios)
 
-## :memo: Licença
+## Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
