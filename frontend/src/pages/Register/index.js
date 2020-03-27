@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
@@ -9,6 +10,13 @@ import Logo from "../../assets/logo.svg";
 import api from "../../services/api";
 
 export default () => {
+
+  /** 
+   * 
+   * Declarando os estados
+   * 
+   */
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
@@ -18,22 +26,39 @@ export default () => {
   const history = useHistory();
 
   async function handleRegister(env) {
+
+    /**
+     *
+     * Previnir o comportamento padrão do formulário
+     *   - Evitar que recarregue o formulário 
+     *      -  env.preventDefault();
+     * 
+     */
+
     env.preventDefault();
+
     try {
-      const response = await api.post("ongs", {
+
+      const data = {
         name,
         email,
         whatsapp,
         city,
         uf
-      });
+      }
+
+      console.log(data);
+
+      const response = await api.post("ongs", data);
 
       alert(`Seu ID de Acesso:${response.data.id}`);
       history.push("/");
+
     } catch (error) {
       alert("Ocorreu um erro durante o cadastro!");
       history.push("/");
     }
+
   }
 
   return (

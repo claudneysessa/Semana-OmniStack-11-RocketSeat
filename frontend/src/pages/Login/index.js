@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { FaSignInAlt } from "react-icons/fa";
@@ -9,13 +10,17 @@ import "./styles.css";
 import api from "../../services/api";
 
 export default () => {
+
   const [id, setId] = useState("");
 
   const history = useHistory();
 
-  async function hundleLogin(env) {
+  async function handleLogin(env) {
+    
     env.preventDefault();
+
     try {
+
       const response = await api.post("sessions", { id });
 
       localStorage.setItem("ongId", id);
@@ -24,9 +29,11 @@ export default () => {
       history.push("/profile");
 
       alert(`Bem vindo ${response.data.name}`);
+
     } catch (error) {
       alert("Erro no Login, tente novamente!");
     }
+
   }
 
   return (
@@ -34,7 +41,7 @@ export default () => {
       <section className="form">
         <img src={Logo} alt="logo" />
 
-        <form onSubmit={hundleLogin}>
+        <form onSubmit={handleLogin}>
           <h1>Faça seu Login</h1>
           <input
             type="text"
@@ -54,4 +61,5 @@ export default () => {
       <img src={Heroes} alt="heroes" />
     </div>
   );
+
 };

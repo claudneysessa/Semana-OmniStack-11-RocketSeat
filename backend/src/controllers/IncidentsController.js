@@ -1,9 +1,10 @@
+
 import connection from "../database/connection";
 
 export default {
 	async delete(req, res) {
 		const { id } = req.params;
-		const ong_id = req.headers.authorization;
+		const ong_id = req.headers.ong_id;
 		const incident = await connection("incidents")
 			.where("id", id)
 			.select("ong_id")
@@ -42,7 +43,7 @@ export default {
 
 	async store(req, res) {
 		const { title, description, value } = req.body;
-		const ong_id = req.headers.authorization;
+		const ong_id = req.headers.ong_id;
 
 		const [id] = await connection("incidents").insert({
 			title,

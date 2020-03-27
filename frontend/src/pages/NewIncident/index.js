@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
@@ -8,6 +9,7 @@ import Logo from "../../assets/logo.svg";
 import api from "../../services/api";
 
 export default () => {
+
   const [title, setTitle] = useState("");
   const [description, setdescription] = useState("");
   const [value, setValue] = useState("");
@@ -16,8 +18,11 @@ export default () => {
   const ongId = localStorage.getItem("ongId");
 
   async function handleSubmit(env) {
+
     env.preventDefault();
+
     try {
+
       await api.post(
         "incidents",
         {
@@ -27,15 +32,19 @@ export default () => {
         },
         {
           headers: {
-            Authorization: ongId
+            ong_id: ongId
           }
         }
       );
+
       history.push("/profile");
+
     } catch (error) {
       alert("Error ao cadastrar caso");
     }
+
   }
+
   return (
     <div className="new-incident-container">
       <div className="content">
@@ -77,4 +86,5 @@ export default () => {
       </div>
     </div>
   );
+  
 };

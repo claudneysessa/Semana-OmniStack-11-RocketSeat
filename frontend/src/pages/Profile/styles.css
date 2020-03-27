@@ -1,3 +1,4 @@
+
 .profile-container {
   width: 100%;
   max-width: 1180px;
@@ -68,18 +69,6 @@
   transition: opacity 0.2s;
   margin-left: 10px;
 }
-
-/*Original CSS*/
-
-/*
-.profile-container ul li button {
-  background: transparent;
-  position: absolute;
-  right: 24px;
-  top: 24px;
-  border: 0;
-  transition: opacity 0.2s;
-}*/
 
 .profile-container ul li button:hover {
   opacity: 80%;

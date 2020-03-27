@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { FaPowerOff, FaEdit, FaTrashAlt } from "react-icons/fa";
@@ -10,38 +11,53 @@ export default () => {
   const [casos, setCasos] = useState([]);
 
   const history = useHistory();
+
   const ongId = localStorage.getItem("ongId");
   const ongName = localStorage.getItem("ongName");
 
   function handleLogout() {
+    
     localStorage.clear();
+    
     history.push("/");
+
   }
 
   async function handleDeleteIncident(id) {
+
     try {
+
       await api.delete(`incidents/${id}`, {
         headers: {
-          Authorization: ongId
+          ong_id: ongId
         }
       });
+
       setCasos(casos.filter(item => item.id !== id));
       alert("Deletado com sucesso!");
+
     } catch (error) {
       alert("Erro ao deletar!");
     }
+
   }
 
   useEffect(() => {
+
     async function loadData() {
+
       const response = await api.get("details", {
         headers: {
-          Authorization: ongId
+          ong_id: ongId
         }
       });
+
       setCasos(response.data);
+      
     }
+
     loadData();
+
   }, [ongId]);
 
   return (
@@ -87,4 +103,5 @@ export default () => {
       </ul>
     </div>
   );
+
 };

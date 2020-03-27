@@ -1,14 +1,12 @@
 
-*********************
-Complementos:
-*********************
+Pequeno Passo a Passo identificado durante os estudos
 
 Visual Studio Code
- - Dracula Theme
- - Material Icon Theme
+- Dracula Theme
+- Material Icon Theme
 
 Google Chrome
- - json-viewer
+- json-viewer
 
 *******
 
@@ -24,7 +22,7 @@ Google Chrome
 Rodar o Server NodeJS => node index.js
 Rodar o Server React => npm start
 
-Instala��o do pacote para Hot Reload no NodeJS
+Instalação do pacote para Hot Reload no NodeJS
 
 -D : DevDependencies (Somente em modo Dev)
 
@@ -44,46 +42,54 @@ Iniciando Knex
 8. npx knex init
 
 migrations
- - npx knex migrate:make create_ongs
- - npx knex migrate:make create_incidents
+- npx knex migrate:make create_ongs
+- npx knex migrate:make create_incidents
 
 criar o banco com base nos migrations
- - npx knex migrate:latest
- - npx knex migrate:rollback
- - npx knex migrate:status
+- npx knex migrate:latest
+- npx knex migrate:rollback
+- npx knex migrate:status
 
- 9. Instalar o CORS para controle e seguran�a
+9. Instalar o CORS para controle e seguran�a
 
- npm install cors
+npm install cors
 
- configura o index
+configura o index
 
- APP WEB
+APP WEB
 
- - Limpar o projeto
- - arquivos in�teis
+- Limpar o projeto
+- arquivos in�teis
 
- O que posso apagar do projeto iniciar React??
+O que posso apagar do projeto iniciar React??
 
- - README.md
- - app.css
- - app.test.js
- - logo.svg
- - serviceWorker.js
- - setupTest.js
+- README.md
+- app.css
+- app.test.js
+- logo.svg
+- serviceWorker.js
+- setupTest.js
 
- Remover as dependencias dentro dos arquivos app.js e index.js
+Remover as dependencias dentro dos arquivos app.js e index.js
 
- pasta public
+pasta public
 
- robots.txt
- manifest.json
- logo192.png
- logo512.png
+robots.txt
+manifest.json
+logo192.png
+logo512.png
 
- ajustar o index.html
+ajustar o index.html
 
 Ajustes de Página WEB
 
- npm install react-icons
- npm install react-router-dom
+npm install react-icons
+npm install react-router-dom
+
+Instalação do Cliente HTTP
+
+npm install axios
+
+Criar o Services
+
+api.js

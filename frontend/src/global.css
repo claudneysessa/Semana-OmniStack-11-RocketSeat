@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
 
 * {
@@ -84,4 +85,17 @@ form textarea {
 
 .back-link svg {
   margin-right: 8px;
+}
+
+.erro-containner {
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: grid;
+  /*Alinha items vertical*/
+  align-items: center;
+  /*Alinha items horizontal*/
+  /* justify-content: space-between; */
 }

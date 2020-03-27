@@ -1,3 +1,4 @@
+
 exports.up = (knex) => {
 	return knex.schema.createTable(
 		"ongs",
