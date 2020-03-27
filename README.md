@@ -1,7 +1,7 @@
 # Semana OmniStack 11.0 RocketSeat - ( Be the Hero )
 Desenvolviemto de uma aplicação completa com NodeJS + React + React Native
 
-<img src="https://github.com/claudneysessa/Semana-OmniStack-11-RocketSeat/blob/master/assets/images/heroes.png?raw=true" width="300" ></img>
+<img src="https://github.com/claudneysessa/Semana-OmniStack-11-RocketSeat/blob/master/frontend/src/assets/heroes.png?raw=true" width="300" ></img>
 
 Detalhes da Aplicação
 
