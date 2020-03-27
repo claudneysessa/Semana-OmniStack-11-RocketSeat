@@ -8,12 +8,12 @@ import Logo from "../../assets/logo.svg";
 import api from "../../services/api";
 
 export default () => {
-  const [casos, setCasos] = useState([]);
+  const [incidents, setincidents] = useState([]);
 
   const history = useHistory();
 
-  const ongId = localStorage.getItem("ongId");
-  const ongName = localStorage.getItem("ongName");
+  const ongId = localStorage.getincident("ongId");
+  const ongName = localStorage.getincident("ongName");
 
   function handleLogout() {
     
@@ -33,7 +33,7 @@ export default () => {
         }
       });
 
-      setCasos(casos.filter(item => item.id !== id));
+      setincidents(incidents.filter(incident => incident.id !== id));
       alert("Deletado com sucesso!");
 
     } catch (error) {
@@ -52,7 +52,7 @@ export default () => {
         }
       });
 
-      setCasos(response.data);
+      setincidents(response.data);
       
     }
 
@@ -72,31 +72,28 @@ export default () => {
           <FaPowerOff size={18} color="#E02041" />
         </button>
       </header>
-      <h1>Casos cadastrados</h1>
+      <h1>incidents cadastrados</h1>
       <ul>
-        {casos.map(item => (
-          <li key={item.id}>
+        {incidents.map(incident => (
+          <li key={incident.id}>
             <div>
               <button tyoe="button">
                 <FaEdit size={20} color="#a8a8b3" />
               </button>
               <button
-                onClick={() => handleDeleteIncident(item.id)}
+                onClick={() => handleDeleteIncident(incident.id)}
                 tyoe="button"
               >
                 <FaTrashAlt size={20} color="#a8a8b3" />
               </button>
             </div>
             <strong>CASO:</strong>
-            <p>{item.title}</p>
+            <p>{incident.title}</p>
             <strong>DESCRIÇÃO:</strong>
-            <p>{item.description}</p>
+            <p>{incident.description}</p>
             <strong>VALOR:</strong>
             <p>
-              {Intl.NumberFormat("pt-BR", {
-                style: "currency",
-                currency: "BRL"
-              }).format(item.value)}
+              {Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(incident.value)}
             </p>
           </li>
         ))}
