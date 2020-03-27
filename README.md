@@ -23,7 +23,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## Bibliotecas Utilizadas:
 
 - [Express](https://expressjs.com/pt-br/)
-- [Nodemon] (https://www.npmjs.com/package/nodemon)
+- [Nodemon](https://www.npmjs.com/package/nodemon)
 - [KnexJS](http://knexjs.org/)
 - [React Icons](https://react-icons.netlify.com/#/)
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
