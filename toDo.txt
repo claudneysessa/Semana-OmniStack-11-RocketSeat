@@ -83,5 +83,7 @@ criar o banco com base nos migrations
 
  ajustar o index.html
 
+Ajustes de Página WEB
+
  npm install react-icons
  npm install react-router-dom
