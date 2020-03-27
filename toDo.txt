@@ -50,7 +50,7 @@ criar o banco com base nos migrations
 - npx knex migrate:rollback
 - npx knex migrate:status
 
-9. Instalar o CORS para controle e seguran�a
+9. Instalar o CORS para controle e segurança
 
 npm install cors
 
@@ -59,7 +59,7 @@ configura o index
 APP WEB
 
 - Limpar o projeto
-- arquivos in�teis
+- arquivos inúteis
 
 O que posso apagar do projeto iniciar React??
 

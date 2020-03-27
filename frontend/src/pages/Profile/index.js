@@ -12,8 +12,8 @@ export default () => {
 
   const history = useHistory();
 
-  const ongId = localStorage.getincident("ongId");
-  const ongName = localStorage.getincident("ongName");
+  const ongId = localStorage.getItem("ongId");
+  const ongName = localStorage.getItem("ongName");
 
   function handleLogout() {
     
