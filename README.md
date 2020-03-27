@@ -19,6 +19,6 @@ Bibliotecas Utilizadas:
 - [Express](https://expressjs.com/pt-br/)
 - [KnexJS](http://knexjs.org/)
 - [react-icons](https://react-icons.netlify.com/#/)
-- [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
 - [cors](https://www.npmjs.com/package/cors)
-- [axios](https://github.com/axios/axios)
+- [axios](https://www.npmjs.com/package/axios)
