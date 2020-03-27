@@ -1,22 +1,26 @@
 {
-  "name": "backend",
+  "name": "beTheHero",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Backend/API da Aplicaçao Be The Hero!",
+  "main": "Main.js",
+  "author": "mpgxc",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.20.13",
-    "sqlite3": "^4.1.1",
-    "sybase": "^1.2.1"
+    "nodemon": "^2.0.2",
+    "sqlite3": "^4.1.1"
+  },
+  "scripts": {
+    "start": "nodemon --exec sucrase-node ./src/Main.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2"
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^2.0.2",
+    "sucrase": "^3.12.1"
   }
 }
