@@ -1,95 +1,87 @@
 
 Pequeno Passo a Passo identificado durante os estudos
 
-Visual Studio Code
-- Dracula Theme
-- Material Icon Theme
+*********************************************************************
+PASSO 1: Instalação:
+*********************************************************************
 
-Google Chrome
-- json-viewer
+1. Instalar o Chocolatey
+ 
+ - https://chocolatey.org/
 
-*******
+2. Instalar o NodeJS
+ 
+ - https://nodejs.org/en/
 
-1. Criar a pasta do projeto
-2. npm init -y
-3. npm install express
+3. Instalar o Visual Studio Code
+ 
+ - https://code.visualstudio.com/
 
---> criando o projeto WEB
+4. Ajustes no Visual Studio Code
 
-4. npx create-react-app frontend
-5. expo => framework pro React Native
+ - Adicionar Extensions
+  - Dracula Theme
+  - Material Icon Theme
 
-Rodar o Server NodeJS => node index.js
-Rodar o Server React => npm start
+5. Instalar Extension do Google Chrome
+ 
+ - json-viewer
 
-Instalação do pacote para Hot Reload no NodeJS
+*********************************************************************
+PASSO 2: Criando os Projetos
+*********************************************************************
 
--D : DevDependencies (Somente em modo Dev)
+1. Back-End
 
-6. npm install nodemon -D
+ - 1.1. Criar a pasta do projeto
+ - 1.2. npm init -y
+ - 1.3. npm install express
+ - 1.4. npm install nodemon -D  ( -D instala como DevDependencies )
+   - 1.4.1. Configurar o start no package.json
+ - 1.5. npm install knex
+   - 1.5.1. npx knex init
+     - Criando as migrations
+       - npx knex migrate:make create_ongs
+       - npx knex migrate:make create_incidents
+     - Criar o banco com base nos migrations
+       - npx knex migrate:latest
+       - npx knex migrate:rollback
+       - npx knex migrate:status
+ - 1.6. npm install cors
+   - 1.6.1. Configurar o CORS no main.js
+ - 1.7. npm install sybase ( Opcional )
+ - 1.8. npm install sqlite3
 
-Configurar o start no package.json
+Rodar o Server antes do nodemon => node index.js
+Rodar o Server após nodemon => npm start
 
-Conector SQL
+2. Front-End
 
-7. npm install knex
-
-npm install sybase
-npm install sqlite3
-
-Iniciando Knex
-
-8. npx knex init
-
-migrations
-- npx knex migrate:make create_ongs
-- npx knex migrate:make create_incidents
-
-criar o banco com base nos migrations
-- npx knex migrate:latest
-- npx knex migrate:rollback
-- npx knex migrate:status
-
-9. Instalar o CORS para controle e segurança
-
-npm install cors
-
-configura o index
-
-APP WEB
-
-- Limpar o projeto
-- arquivos inúteis
-
-O que posso apagar do projeto iniciar React??
-
-- README.md
-- app.css
-- app.test.js
-- logo.svg
-- serviceWorker.js
-- setupTest.js
-
-Remover as dependencias dentro dos arquivos app.js e index.js
-
-pasta public
-
-robots.txt
-manifest.json
-logo192.png
-logo512.png
-
-ajustar o index.html
-
+ - 2.1. npx create-react-app frontend
+ - 2.2. Limpar o projeto inicial
+   - configura o index
+     - APP WEB
+       - Limpar o projeto
+         - Pasta RAIZ
+           - README.md
+         - Pasta src
+           - app.css
+           - app.test.js
+           - logo.svg
+           - serviceWorker.js
+           - setupTest.js
+         - Remover as dependencias dentro dos arquivos app.js e index.js
+         - pasta public
+           - robots.txt
+           - manifest.json
+           - logo192.png
+           - logo512.png
+           - ajustar o index.html
 Ajustes de Página WEB
+ - 2.3. npm install react-icons
+ - 2.4. npm install react-router-dom
+ - 2.5. npm install axios
+   - Criar a pasta services
+     - criar arquivo api.js
 
-npm install react-icons
-npm install react-router-dom
-
-Instalação do Cliente HTTP
-
-npm install axios
-
-Criar o Services
-
-api.js
+Rodar o Server React => npm start
