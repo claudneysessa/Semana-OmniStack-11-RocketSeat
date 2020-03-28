@@ -1,19 +1,21 @@
 
-import connection from "../database/connection";
+const connection = require('../database/connection');
 
-export default {
-	async store(req, res) {
-		const { id } = req.body;
-		const ong = await connection("ongs")
-			.where("id", id)
-			.select("name")
-			.first();
+module.exports = {
+  async create(req, res) {
+    const {id} = req.body;
 
-		if (!ong) {
-			return res.status(400).json({
-				error: "Ong não encontrada!",
-			});
-		}
-		return res.json(ong);
-	},
+    const ong = await connection('ongs')
+        .where('id', id)
+        .select('name')
+        .first();
+
+    if (!ong) {
+      return res.status(400).json({
+        error: 'Ong não encontrada!',
+      });
+    }
+
+    return res.json(ong);
+  },
 };

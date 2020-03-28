@@ -1,5 +1,11 @@
 
-import knex from "knex";
-import configs from "../../knexfile";
+const knex = require('knex');
+const configuration = require('../../knexfile');
 
-export default knex(configs.development);
+const config = process.env.NODE_ENV == 'TEST-MODE' ?
+    configuration.test :
+    configuration.development;
+
+const connection = knex(config);
+
+module.exports = connection;

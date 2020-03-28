@@ -1,36 +1,36 @@
 
-import connection from "../database/connection";
-import { randomBytes } from "crypto";
+const connection = require('../database/connection');
+const generateUniqueId = require('../utils/generateUniqueId');
 
-export default {
-	async index(req, res) {
-		const { page = 1 } = req.query;
+module.exports = {
+  async index(req, res) {
+    const {paginaAtual = 1, registroPorPagina = 5} = req.query;
+    const [count] = await connection('ongs').count();
 
-		const [count] = await connection("ongs").count();
+    res.header('X-Total-Count', count['count(*)']);
 
-		res.header("X-Total-Count", count["count(*)"]);
+    return res.json(
+        await connection('ongs')
+            .limit(registroPorPagina)
+            .offset((paginaAtual - 1) * registroPorPagina)
+            .select('*'),
+    );
+  },
 
-		return res.json(
-			await connection("ongs")
-				.limit(5)
-				.offset((page - 1) * 5)
-				.select("*")
-		);
-	},
+  async create(req, res) {
+    const {name, email, whatsapp, city, uf} = req.body;
 
-	async store(req, res) {
-		const { name, email, whatsapp, city, uf } = req.body;
-		const id = randomBytes(4).toString("HEX");
+    const id = generateUniqueId();
 
-		await connection("ongs").insert({
-			id,
-			name,
-			email,
-			whatsapp,
-			city,
-			uf,
-		});
+    await connection('ongs').insert({
+      id,
+      name,
+      email,
+      whatsapp,
+      city,
+      uf,
+    });
 
-		return res.json({ id });
-	},
+    return res.json({id});
+  },
 };

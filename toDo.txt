@@ -1,3 +1,4 @@
+
 Pequeno Passo a Passo identificado durante os estudos
 
 *********************************************************************
@@ -5,25 +6,20 @@ PASSO 1: Instalação:
 *********************************************************************
 
 1. Instalar o Chocolatey
- 
  - https://chocolatey.org/
 
 2. Instalar o NodeJS
- 
  - https://nodejs.org/en/
 
 3. Instalar o Visual Studio Code
- 
  - https://code.visualstudio.com/
 
 4. Ajustes no Visual Studio Code
-
  - Adicionar Extensions
   - Dracula Theme
   - Material Icon Theme
 
 5. Instalar Extension do Google Chrome
- 
  - json-viewer
 
 *********************************************************************
@@ -50,6 +46,19 @@ PASSO 2: Criando os Projetos
    - 1.6.1. Configurar o CORS no main.js
  - 1.7. npm install sybase ( Opcional )
  - 1.8. npm install sqlite3
+ - 1.9. npm install celebrate
+ - 1.10. npm install jest -D
+ - 1.11. npx jest --init
+ - 1.12. npm install cross-env
+   - Configurar o banco de teste no knex
+   - Ajustar o package.json
+   - Ajustar o connection.js
+ - 1.13. npm install supertest -D
+   - Configurar arquivos
+   - Gerar os Testes
+
+ - npm install eslint --save-dev
+ - npm install eslint-formatter-pretty
 
 Rodar o Server antes do nodemon => node index.js
 Rodar o Server após nodemon => npm start
