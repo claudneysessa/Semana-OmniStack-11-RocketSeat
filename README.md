@@ -37,9 +37,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Instalação
 
-Baixe o projeto via download ou clone do repositório no GitHub, caso tenha feito o download do arquivo compactado descompacte o mesmo em uma pasta de fácil acesso e depois execute os passos adicionais descritos abaixo
+Baixe o projeto via download ou clone do repositório no GitHub, caso tenha feito o download do arquivo compactado descompacte o mesmo em uma pasta de fácil acesso e depois execute os passos adicionais descritos abaixo:
 
-Para iniciar o **Backend** do React utilize os comandos:
+- Instale o Chocolatey
+- Instale o NodeJS
+- Instale o Visual Studio Code
+
+Para iniciar o **Backend**, navegue até a pasta do projeto de backend do NodeJS e utilize os comandos:
 
 ```
 npm install
@@ -47,7 +51,7 @@ npm start
 ```
 Logo estará disponível sua API no endereço `localhost:9999`
 
-Para iniciar o **Frontend** do React utilize os comandos:
+Para iniciar o **Frontend**, navegue até a pasta do projeto de Frontend do React utilize os comandos:
 
 ```
 npm install
