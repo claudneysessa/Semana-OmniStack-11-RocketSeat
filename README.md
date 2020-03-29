@@ -62,6 +62,9 @@ Assim que o processo terminar, automaticamente será aberta no seu navegador a p
 ## Imagens
 
 <img src=".github/paginaInicial.PNG"></img>
+<img src=".github/paginaRegistro.PNG"></img>
+<img src=".github/paginaIncident.PNG"></img>
+<img src=".github/paginaProfile.PNG"></img>
 
 ## Licença
 
