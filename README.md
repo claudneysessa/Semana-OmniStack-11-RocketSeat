@@ -61,20 +61,19 @@ Assim que o processo terminar, automaticamente será aberta no seu navegador a p
 
 ## Imagens
 
-<h3> Página De Login </h3>
---
+<h4> Página De Login </h4>
 
 <img src=".github/paginaInicial.PNG"></img>
 
-<h3> Página de Cadastro </h3>
+<h4> Página de Cadastro </h4>
 
 <img src=".github/paginaRegistro.PNG"></img>
 
-<h3> Página de Cadastro de Ações </h3>
+<h4> Página de Cadastro de Ações </h4>
 
 <img src=".github/paginaIncident.PNG"></img>
 
-<h3> Página de Listagem de Ações </h3>
+<h4> Página de Listagem de Ações </h4>
 
 <img src=".github/paginaProfile.PNG"></img>
 
