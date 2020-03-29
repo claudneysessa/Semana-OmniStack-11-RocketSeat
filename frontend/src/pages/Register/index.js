@@ -35,9 +35,15 @@ export default () => {
      * 
      */
 
+    console.log('111');
+
     env.preventDefault();
 
+    console.log('222');
+
     try {
+
+      console.log('333');
 
       const data = {
         name,

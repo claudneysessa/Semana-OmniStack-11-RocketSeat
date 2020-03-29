@@ -6,7 +6,7 @@ import axios from "axios";
 /* Definindo a URL padrão de chamada */
 
 const api = axios.create({
-  baseURL: "http://claudneysessa.ddns.net:9999"
+  baseURL: "http://localhost:9999"
 });
 
 /* Exportando a API para a aplicação */

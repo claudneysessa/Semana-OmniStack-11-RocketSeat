@@ -46,7 +46,7 @@ export default () => {
 
     async function loadData() {
 
-      const response = await api.get("details", {
+      const response = await api.get("profile", {
         headers: {
           ong_id: ongId
         }

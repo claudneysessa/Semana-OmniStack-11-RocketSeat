@@ -14,7 +14,9 @@
     "express": "^4.17.1",
     "knex": "^0.20.13",
     "nodemon": "^2.0.2",
-    "sqlite3": "^4.1.1"
+    "odbc": "^2.2.2",
+    "sqlite3": "^4.1.1",
+    "sybase": "^1.2.1"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=DEVELOP-MODE PORT=9999 nodemon --exec sucrase-node ./src/server.js",
