@@ -59,6 +59,10 @@ npm start
 ```
 Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:9898` contendo o Projeto desenvolvido no dia 3.
 
+## Imagens
+
+<img src=".github/paginaInicial.PNG"></img>
+
 ## Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
