@@ -61,9 +61,13 @@ Assim que o processo terminar, automaticamente será aberta no seu navegador a p
 
 ## Imagens
 
+Página De Login
 <img src=".github/paginaInicial.PNG"></img>
+Página de Cadastro
 <img src=".github/paginaRegistro.PNG"></img>
+Página de Cadastro de Ações
 <img src=".github/paginaIncident.PNG"></img>
+Página de Listagem de Ações
 <img src=".github/paginaProfile.PNG"></img>
 
 ## Licença
