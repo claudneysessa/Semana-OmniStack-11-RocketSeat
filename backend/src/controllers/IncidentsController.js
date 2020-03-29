@@ -28,7 +28,7 @@ module.exports = {
 
     return res.json(
         await connection('incidents')
-            .join('ongs', 'ongs.id', '=', 'incidents.ongId')
+            .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
             .limit(registrosPorPagina)
             .offset((paginaAtual - 1) * registrosPorPagina)
             .select([
@@ -44,13 +44,14 @@ module.exports = {
 
   async create(req, res) {
     const {title, description, value} = req.body;
-    const ongId = req.headers.ongId;
+
+    const ongId = req.headers.ong_id;
 
     const [id] = await connection('incidents').insert({
-      title,
-      description,
-      value,
-      ongId,
+      title: title,
+      description: description,
+      value: value,
+      ong_id: ongId,
     });
 
     return res.json({id});

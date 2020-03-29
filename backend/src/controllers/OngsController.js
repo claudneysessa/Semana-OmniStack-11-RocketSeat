@@ -1,18 +1,19 @@
+/* eslint-disable camelcase */
 
 const connection = require('../database/connection');
 const generateUniqueId = require('../utils/generateUniqueId');
 
 module.exports = {
   async index(req, res) {
-    const {paginaAtual = 1, registroPorPagina = 5} = req.query;
+    const {pagina_atual = 1, registros_por_pagina = 5} = req.query;
     const [count] = await connection('ongs').count();
 
     res.header('X-Total-Count', count['count(*)']);
 
     return res.json(
         await connection('ongs')
-            .limit(registroPorPagina)
-            .offset((paginaAtual - 1) * registroPorPagina)
+            .limit(registros_por_pagina)
+            .offset((pagina_atual - 1) * registros_por_pagina)
             .select('*'),
     );
   },

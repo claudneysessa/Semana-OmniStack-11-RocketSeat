@@ -1,10 +1,10 @@
 
 const knex = require('knex');
-const configuration = require('../../knexfile');
+const {test, development} = require('../../knexfile');
 
 const config = process.env.NODE_ENV == 'TEST-MODE' ?
-    configuration.test :
-    configuration.development;
+    test :
+    development;
 
 const connection = knex(config);
 
