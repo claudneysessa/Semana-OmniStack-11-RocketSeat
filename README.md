@@ -45,6 +45,7 @@ Para iniciar o **Backend** do React utilize os comandos:
 npm install
 npm start
 ```
+Logo estará disponível sua API no endereço `localhost:9999`
 
 Para iniciar o **Frontend** do React utilize os comandos:
 
@@ -52,6 +53,7 @@ Para iniciar o **Frontend** do React utilize os comandos:
 npm install
 npm start
 ```
+Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:9898` contendo o Projeto desenvolvido no dia 3.
 
 ## Licença
 
