@@ -35,6 +35,24 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React Icons](https://react-icons.netlify.com/#/)
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 
+## Instalação
+
+Baixe o projeto via download ou clone do repositório no GitHub, caso tenha feito o download do arquivo compactado descompacte o mesmo em uma pasta de fácil acesso e depois execute os passos adicionais descritos abaixo
+
+Para iniciar o **Backend** do React utilize os comandos:
+
+```
+npm install
+npm start
+```
+
+Para iniciar o **Frontend** do React utilize os comandos:
+
+```
+npm install
+npm start
+```
+
 ## Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
