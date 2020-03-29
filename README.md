@@ -18,17 +18,22 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Node.js](https://nodejs.org/en/)
 - [React](https://reactjs.org)
-- [React Native](https://facebook.github.io/react-native/)
 
 ## Bibliotecas Utilizadas:
 
 - [Express](https://expressjs.com/pt-br/)
 - [Nodemon](https://www.npmjs.com/package/nodemon)
 - [KnexJS](http://knexjs.org/)
+- [CORS](https://www.npmjs.com/package/cors)
+- [sqlite3](https://www.npmjs.com/package/sqlite3)
+- [celebrate](https://www.npmjs.com/package/celebrate)
+- [jest](https://www.npmjs.com/package/jest)
+- [cross-env](https://www.npmjs.com/package/cross-env)
+- [supertest](https://www.npmjs.com/package/supertest)
+- [eslint](https://www.npmjs.com/package/eslint)
+- [Axios](https://www.npmjs.com/package/axios)
 - [React Icons](https://react-icons.netlify.com/#/)
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
-- [CORS](https://www.npmjs.com/package/cors)
-- [Axios](https://www.npmjs.com/package/axios)
 
 ## Licença
 
