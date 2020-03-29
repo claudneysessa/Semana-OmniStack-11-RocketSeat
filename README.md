@@ -35,6 +35,30 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React Icons](https://react-icons.netlify.com/#/)
 - [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 
+## Instalação
+
+Baixe o projeto via download ou clone do repositório no GitHub, caso tenha feito o download do arquivo compactado descompacte o mesmo em uma pasta de fácil acesso e depois execute os passos adicionais descritos abaixo:
+
+- Instale o Chocolatey
+- Instale o NodeJS
+- Instale o Visual Studio Code
+
+Para iniciar o **Backend**, navegue até a pasta do projeto de backend do NodeJS e utilize os comandos:
+
+```
+npm install
+npm start
+```
+Logo estará disponível sua API no endereço `localhost:9999`
+
+Para iniciar o **Frontend**, navegue até a pasta do projeto de Frontend do React utilize os comandos:
+
+```
+npm install
+npm start
+```
+Assim que o processo terminar, automaticamente será aberta no seu navegador a página `localhost:9898` contendo o Projeto desenvolvido no dia 3.
+
 ## Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
